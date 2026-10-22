@@ -4,7 +4,7 @@ Responsiv startsida för den fiktiva naturdestinationen Norrgläntan.
 
 ## Länkar
 
-- länk till min applikation: [länk]
+- länk till min publicerade applikation (via Github pages):(https://maariaamm.github.io/norrglantan/)
 - [Figma-mockup](https://www.figma.com/design/g4Y3COaiNTbB5JlBcULAD5/Untitled?node-id=0-1&t=CCC5IWpLSzuE3QVW-1)
 
 ## Om projektet
