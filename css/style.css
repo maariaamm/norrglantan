@@ -182,11 +182,26 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 16px;
   padding: 24px 16px;
   background-color: white;
+}
+
+.footer-brand {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+.footer-contact {
+  justify-self: start;
+}
+.footer-links {
+  justify-self: end;
 }
 
 footer h2 {
@@ -224,6 +239,7 @@ footer img {
   header {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links {
@@ -231,6 +247,29 @@ footer img {
     gap: 24px;
   }
 
+  .hero-section {
+    position: relative;
+    z-index: 0;
+    min-height: 520px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    padding: 34px;
+  }
+  .hero-section img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    filter: brightness(0.6);
+    z-index: -1;
+  }
+  .hero-section h1,
+  .hero-section p {
+    color: white;
+  }
+  .hero-section h1 span {
+    display: block;
+  }
   .activities-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -241,7 +280,16 @@ footer img {
   }
 
   footer {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    padding: 32px 12%;
+  }
+  .footer-brand {
+    grid-column: auto;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-contact {
+    justify-self: center;
   }
 }
