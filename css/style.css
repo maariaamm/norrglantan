@@ -293,4 +293,26 @@ footer img {
   .footer-contact {
     justify-self: center;
   }
+  .cta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 32px;
+    align-items: center;
+    text-align: left;
+    padding: 16px clamp(42px, 14vw, 240px);
+  }
+
+  .cta h2,
+  .cta p {
+    grid-column: 1;
+    max-width: 600px;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .cta .button {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0;
+  }
 }
