@@ -167,16 +167,16 @@ header {
 
 .cta {
   padding: 48px 16px;
-  background-color: #2f4f3e;
+  background-color: #f4f1e8;
   text-align: center;
 }
 
-.cta h2,
-.cta p {
-  color: white;
+.cta h2 {
+  color: #2f4f3e;
 }
 
 .cta p {
+  color: #1f2a24;
   max-width: 600px;
   margin: 0 auto;
 }
